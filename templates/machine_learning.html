@@ -18,12 +18,48 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="https://d3js.org/d3.v4.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+<style>
+  .slidecontainer {
+    width: 100%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 25px;
+    background: #145385;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #800000;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #000000;
+    cursor: pointer;
+  }
+  </style>
 
 <!-- Page Title -->
     <title>Learning</title>
 
 <!-- Create the navigation bar at the top -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="navibar" style='background-color:black !important'>
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="navibar" style='background-color:black !important'>
     <strong><a class="navbar-brand" href="index.html">Steam Data <i class='fab fa-steam' style='font-size:24px;color:white'></i> Home</a></strong>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"></button>
     <div class="navbar navbar-collapse">
@@ -56,7 +92,7 @@
         </ul>
     </div>
     <a class="nav-text">Steam Data Analysis Web Visualization Dashboard <i class="fab fa-steam-symbol"></i></a>
-</nav>
+</nav> -->
 </head>
 <body>
 <div class="container-fluid" id="states">
@@ -94,7 +130,7 @@
 
               </style>
               </div>
-              <div id="flip" style="background-color:#edf2f4"><h1 style="color: #800000;">Machine Learning <br> Will my game be a hit? </h1><br>Using our data and looking at genres and tags we are able to create a basic filter function that can recommend games based on what you make like. Make your selections below and let the fun begin! <br> To create this machine learning model we...
+              <div id="flip" style="background-color:#edf2f4"><h1 style="color: #800000;">Machine Learning <br> Will my game be a hit? </h1><br>Using our data and looking at genres and tags we are able to create a basic filter function that can recommend games based on what you make like. Make your selections below and let the fun begin! <br> To create this machine learning model we used logistic regression and scaled our data. We created a testing and training set using hit or not as our pediciton value.<br> We found the most influential features were price and metascore so that is what we chose to use for our model. <br>These features also apply to all games and have a good correlation so are the best to use.
 
                 <div class="container-fluid">
                   <div class="row">
