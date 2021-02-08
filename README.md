@@ -11,3 +11,5 @@ The data used to create this app was scraped from the following websites:
 -https://steamdb.info/
 
 
+![appimage](https://github.com/mchamberlain5/machinelearningapp/blob/main/images/machinelearningappimage.png?raw=true)
+
